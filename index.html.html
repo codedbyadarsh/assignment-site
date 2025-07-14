@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Help - Contact Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1581091012184-7f1a4c8b56ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 10px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .info-box, .price-box {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .info-box h2, .price-box h2 {
+            color: #6a11cb;
+        }
+        .contact-form {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .contact-form a {
+            display: block;
+            margin: 15px 0;
+        }
+        .price-button {
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 80%;
+            max-width: 400px;
+        }
+        .price-button:hover {
+            background-color: #5a0fb0;
+        }
+        footer {
+            text-align: center;
+            background-color: #6a11cb;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showPrices() {
+            const priceBox = document.getElementById('price-box');
+            priceBox.style.display = priceBox.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    Get Your Assignment Completed Quickly and Easily
+</header>
+
+<div class="info-box">
+    <h2>Why Choose Me?</h2>
+    <ul>
+        <li>✅ Fast Assignment Completion</li>
+        <li>✅ Clean, Neat & Accurate Work</li>
+        <li>✅ Friendly Support and Affordable Rates</li>
+    </ul>
+    <button class="price-button" onclick="showPrices()">See Price Details</button>
+</div>
+
+<div id="price-box" class="price-box" style="display: none;">
+    <h2>Price Details</h2>
+    <ul>
+        <li>📄 ₹5 per Page (Writing Work)</li>
+        <li>🎨 ₹10 per Page (Drawing Work)</li>
+    </ul>
+</div>
+
+<div class="contact-form">
+    <h2>Contact Me</h2>
+    <a href="https://forms.gle/h6umt1xBNufv232q8" target="_blank">
+        <button class="price-button">📄 Fill Google Form</button>
+    </a>
+    <a href="https://wa.me/918235870768?text=Hello%2C%20I%20want%20to%20get%20my%20assignment%20done" target="_blank">
+        <button class="price-button">📱 Contact on WhatsApp</button>
+    </a>
+</div>
+
+<footer>
+    &copy; 2025 Assignment Service | Contact for Fast Work
+</footer>
+
+</body>
+</html>
